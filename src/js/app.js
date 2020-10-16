@@ -2,13 +2,17 @@ import showMessage from "./message";
 
 class App {
     constructor() {
-        this.togglePopupOnMousedown = this.togglePopupOnMousedown.bind(this);
+        this.togglePopupOverlay = this.togglePopupOverlay.bind(this);
+        this.togglePopupBtn = this.togglePopupBtn.bind(this);
         this.submitForm = this.submitForm.bind(this);
 
-        this.lets_talk_btn = document.getElementById('lets-talk-btn');
         this.lets_talk_popup = document.getElementById('lets-talk-popup');
+
+        this.lets_talk_btn = document.getElementById('lets-talk-btn');
         this.lets_talk_overlay = document.getElementById('lets-talk-overlay');
-        document.addEventListener('mousedown', this.togglePopupOnMousedown);
+        this.lets_talk_btn.addEventListener('click', this.togglePopupBtn);
+        this.lets_talk_overlay.addEventListener('mousedown', this.togglePopupOverlay);
+
 
         this.form = document.getElementById('form');
         this.form.addEventListener('submit', this.submitForm);
@@ -18,9 +22,13 @@ class App {
         this.lets_talk_popup.classList.toggle('hide');
     }
 
-    togglePopupOnMousedown(event) {
-        if (event.target === this.lets_talk_btn || event.target === this.lets_talk_overlay)
+    togglePopupOverlay(event) {
+        if (event.target === this.lets_talk_overlay)
             this.togglePopup();
+    }
+
+    togglePopupBtn(event) {
+        this.togglePopup();
     }
 
     validate(name, value) {
