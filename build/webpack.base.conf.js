@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, '../src'),
-    dist: path.join(__dirname, '../dist'),
+    dist: path.join(__dirname, '../docs'),
     static: ''
 };
 
@@ -30,7 +30,9 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ["@babel/preset-env"],
+                        plugins: [["@babel/plugin-transform-runtime", {"regenerator": true}], '@babel/plugin-proposal-class-properties'],
+                        sourceType: "unambiguous"
                     }
                 }
             },
