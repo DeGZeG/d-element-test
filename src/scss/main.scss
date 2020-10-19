@@ -30,6 +30,10 @@ $white: white;
   }
 }
 
+html {
+  font-family: Gilroy, sans-serif;
+}
+
 .container {
   max-width: 1366px;
   margin: 0 auto;
@@ -92,7 +96,6 @@ $white: white;
   }
 
   &__text {
-    font-family: Gilroy, sans-serif;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.05em;
@@ -117,7 +120,6 @@ $white: white;
     left: 213px;
 
     span {
-      font-family: Gilroy, sans-serif;
       font-size: 36px;
       font-weight: 600;
       line-height: 1.28;
@@ -151,7 +153,6 @@ $white: white;
     }
 
     &__title {
-      font-family: Gilroy, sans-serif;
       font-weight: 600;
       font-size: 20px;
       line-height: 1.5;
@@ -163,7 +164,6 @@ $white: white;
     }
 
     &__text {
-      font-family: Gilroy, sans-serif;
       font-size: 16px;
       line-height: 1.62;
       letter-spacing: 0.05em;
@@ -175,7 +175,6 @@ $white: white;
     }
 
     &__link {
-      font-family: Gilroy, sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -276,7 +275,6 @@ $white: white;
   }
 
   &__title {
-    font-family: Gilroy, sans-serif;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.28;
@@ -285,7 +283,6 @@ $white: white;
   }
 
   &__text {
-    font-family: Gilroy, sans-serif;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.05em;
@@ -296,7 +293,6 @@ $white: white;
   }
 
   &__clients {
-    font-family: Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 2.30;
@@ -357,7 +353,6 @@ $white: white;
   }
 
   &__title {
-    font-family: Gilroy, sans-serif;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.28;
@@ -367,7 +362,6 @@ $white: white;
   }
 
   &__text {
-    font-family: Gilroy, sans-serif;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.05em;
@@ -393,7 +387,6 @@ $white: white;
       margin-bottom: 31px;
 
       span {
-        font-family: Gilroy, sans-serif;
         font-weight: 600;
         font-size: 28px;
         line-height: 1.64;
@@ -407,7 +400,6 @@ $white: white;
       margin-bottom: 22px;
 
       .elem__title {
-        font-family: Gilroy, sans-serif;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.62;
@@ -416,7 +408,6 @@ $white: white;
       }
 
       .elem__text {
-        font-family: Gilroy, sans-serif;
         font-size: 16px;
         line-height: 1.62;
         letter-spacing: 0.05em;
@@ -426,7 +417,6 @@ $white: white;
     }
 
     .info__rights {
-      font-family: Gilroy, sans-serif;
       font-size: 16px;
       line-height: 1.62;
       letter-spacing: 0.05em;
@@ -437,7 +427,6 @@ $white: white;
   }
 
   &__bot-title {
-    font-family: Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
@@ -450,7 +439,6 @@ $white: white;
   &__nav {
 
     a {
-      font-family: Gilroy, sans-serif;
       font-size: 16px;
       line-height: 1.62;
       letter-spacing: 0.05em;
@@ -511,7 +499,6 @@ $white: white;
     }
 
     &__title {
-      font-family: Gilroy, sans-serif;
       font-weight: 600;
       font-size: 20px;
       line-height: 1.5;
@@ -528,7 +515,6 @@ $white: white;
     }
 
     &__label {
-      font-family: Gilroy, sans-serif;
       font-size: 16px;
       line-height: 1.87;
       letter-spacing: 0.04em;
@@ -544,7 +530,6 @@ $white: white;
       padding: 21px 36px;
       margin-top: 8px;
 
-      font-family: Gilroy, sans-serif;
       font-weight: 300;
       font-size: 16px;
       line-height: 1.87;
@@ -588,7 +573,6 @@ $white: white;
   justify-content: center;
   align-items: center;
 
-  font-family: Gilroy, sans-serif;
   font-size: 18px;
   line-height: 1.87;
   text-align: center;
