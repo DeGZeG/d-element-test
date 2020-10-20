@@ -137,47 +137,49 @@
                         <button id="lets-talk-btn" class="footer__btn">Let's Talk</button>
                     </div>
                     <div class="footer__bot">
-                        <div class="footer__info">
-                            <div class="footer__logo">
-                                <img src="./img/logo-footer.svg" alt="logo">
-                                <span>Afrianska</span>
+                        <div class="footer__group">
+                            <div class="footer__info">
+                                <div class="footer__logo">
+                                    <img src="./img/logo-footer.svg" alt="logo">
+                                    <span>Afrianska</span>
+                                </div>
+                                <div class="info__elem">
+                                    <span class="elem__title">A.</span>
+                                    <span class="elem__text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</span>
+                                </div>
+                                <div class="info__elem">
+                                    <span class="elem__title">T.</span>
+                                    <span class="elem__text">+62-812-7313-4321</span>
+                                </div>
+                                <div class="info__elem">
+                                    <span class="elem__title">E.</span>
+                                    <span class="elem__text">hello.afrian@gmail.com</span>
+                                </div>
                             </div>
-                            <div class="info__elem">
-                                <span class="elem__title">A.</span>
-                                <span class="elem__text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</span>
+                            <div class="footer__about-us">
+                                <span class="footer__bot-title">About US</span>
+                                <nav class="footer__nav">
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">What We Do</a></li>
+                                        <li><a href="#">Project</a></li>
+                                        <li><a href="#">How It Work With Us</a></li>
+                                    </ul>
+                                </nav>
                             </div>
-                            <div class="info__elem">
-                                <span class="elem__title">T.</span>
-                                <span class="elem__text">+62-812-7313-4321</span>
+                            <div class="footer__follow-us">
+                                <span class="footer__bot-title">Follow US</span>
+                                <nav class="footer__nav">
+                                    <ul>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">LinkedIn</a></li>
+                                        <li><a href="#">Youtube</a></li>
+                                    </ul>
+                                </nav>
                             </div>
-                            <div class="info__elem">
-                                <span class="elem__title">E.</span>
-                                <span class="elem__text">hello.afrian@gmail.com</span>
-                            </div>
-                            <div class="info__rights">2019 © Afrianska. All rights reserved.</div>
                         </div>
-                        <div class="footer__about-us">
-                            <span class="footer__bot-title">About US</span>
-                            <nav class="footer__nav">
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">What We Do</a></li>
-                                    <li><a href="#">Project</a></li>
-                                    <li><a href="#">How It Work With Us</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer__follow-us">
-                            <span class="footer__bot-title">Follow US</span>
-                            <nav class="footer__nav">
-                                <ul>
-                                    <li><a href="#">Instagram</a></li>
-                                    <li><a href="#">Facebook</a></li>
-                                    <li><a href="#">LinkedIn</a></li>
-                                    <li><a href="#">Youtube</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <div class="footer__rights">2019 © Afrianska. All rights reserved.</div>
                     </div>
                 </div>
             </div>
@@ -188,6 +190,7 @@
             <form id="form" class="popup" novalidate>
                 <div class="popup__container">
                     <div class="popup__title">SEND US MESSAGE</div>
+                    <div class="popup__close" id="popup-close"></div>
                     <div class="group">
                         <label class="popup__label" for="name-input">Full Name</label>
                         <input name="name" class="popup__input" id="name-input" type="text" placeholder="Your Name">

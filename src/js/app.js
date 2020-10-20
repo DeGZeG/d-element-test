@@ -2,33 +2,31 @@ import showMessage from "./message";
 
 class App {
     constructor() {
+        this.togglePopup = this.togglePopup.bind(this);
         this.togglePopupOverlay = this.togglePopupOverlay.bind(this);
-        this.togglePopupBtn = this.togglePopupBtn.bind(this);
         this.submitForm = this.submitForm.bind(this);
 
-        this.lets_talk_popup = document.getElementById('lets-talk-popup');
+        this.popup = document.getElementById('lets-talk-popup');
 
-        this.lets_talk_btn = document.getElementById('lets-talk-btn');
-        this.lets_talk_overlay = document.getElementById('lets-talk-overlay');
-        this.lets_talk_btn.addEventListener('click', this.togglePopupBtn);
-        this.lets_talk_overlay.addEventListener('mousedown', this.togglePopupOverlay);
+        this.btn = document.getElementById('lets-talk-btn');
+        this.popup_close = document.getElementById('popup-close');
+        this.overlay = document.getElementById('lets-talk-overlay');
 
+        this.btn.addEventListener('click', this.togglePopup);
+        this.popup_close.addEventListener('click', this.togglePopup);
+        this.overlay.addEventListener('mousedown', this.togglePopupOverlay);
 
         this.form = document.getElementById('form');
         this.form.addEventListener('submit', this.submitForm);
     }
 
     togglePopup() {
-        this.lets_talk_popup.classList.toggle('hide');
+        this.popup.classList.toggle('hide');
     }
 
     togglePopupOverlay(event) {
-        if (event.target === this.lets_talk_overlay)
+        if (event.target === this.overlay)
             this.togglePopup();
-    }
-
-    togglePopupBtn(event) {
-        this.togglePopup();
     }
 
     validate(name, value) {

@@ -377,6 +377,7 @@ html {
   &__bot {
     min-height: 478px;
     display: flex;
+    flex-direction: column;
     padding: 97px 0 0 214px;
   }
 
@@ -415,15 +416,6 @@ html {
         margin-left: 18px;
       }
     }
-
-    .info__rights {
-      font-size: 16px;
-      line-height: 1.62;
-      letter-spacing: 0.05em;
-      color: $white;
-      opacity: 0.4;
-      margin-top: 65px;
-    }
   }
 
   &__bot-title {
@@ -453,13 +445,27 @@ html {
   &__about-us {
     display: flex;
     flex-direction: column;
-    margin-left: 110px;
+    margin-left: 142px;
   }
 
   &__follow-us {
     display: flex;
     flex-direction: column;
     margin-left: 77px;
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__rights {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.05em;
+    color: $white;
+    opacity: 0.4;
+    margin-top: 45px;
   }
 }
 
@@ -508,6 +514,16 @@ html {
       margin: 56px 0 48px 0;
     }
 
+    &__close {
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/cancel-icon.png");
+      background-size: 25px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+
     .group {
       display: flex;
       flex-wrap: wrap;
@@ -530,6 +546,7 @@ html {
       padding: 21px 36px;
       margin-top: 8px;
 
+      font-family: Gilroy, sans-serif;
       font-weight: 300;
       font-size: 16px;
       line-height: 1.87;
@@ -646,7 +663,7 @@ html {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .header {
 
     &__content {
@@ -668,13 +685,22 @@ html {
 
   .our-client {
 
+    & .container {
+      padding: 96px 0 0 0;
+    }
+
     &__words {
       flex-direction: column;
+      margin: 0 auto;
     }
 
     &__text {
       margin: 30px 0;
       width: 300px;
+    }
+
+    &__clients {
+      justify-content: center;
     }
   }
 
@@ -683,14 +709,27 @@ html {
     &__bot {
       flex-wrap: wrap;
       padding-bottom: 50px;
+      margin: 0;
     }
 
     &__info {
       margin-bottom: 50px;
     }
 
+    &__group {
+      justify-content: space-around;
+    }
+
     &__about-us {
-      margin: 0 0 30px 0;
+      margin: 0;
+    }
+
+    &__follow-us {
+      margin-left: 0;
+    }
+
+    &__rights {
+      margin: 30px auto 0 auto;
     }
   }
 }
@@ -726,22 +765,18 @@ html {
     }
 
     &__info-card {
-      width: 360px;
+      max-width: 360px;
     }
   }
 
   .our-client {
-
-    .container {
-      padding: 96px 0 0 0;
-    }
 
     &__words {
       margin: 0 50px;
     }
 
     &__text {
-      width: 300px;
+      width: auto;
     }
 
     &__clients {
@@ -765,8 +800,13 @@ html {
       flex-direction: column;
     }
 
-    &__follow-us {
-      margin: 0;
+    &__group {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &__about-us {
+      margin-bottom: 50px;
     }
   }
 
