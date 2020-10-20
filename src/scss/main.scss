@@ -522,6 +522,12 @@ html {
       position: absolute;
       top: 30px;
       right: 30px;
+      cursor: pointer;
+      transition: 0.5s transform;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     .group {
